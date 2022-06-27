@@ -9,7 +9,11 @@ const Stack = createNativeStackNavigator();
 function RouteStack() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={
+        {
+          headerShown: false,
+        }
+      }>
         <Stack.Screen name="Splash" component={SplashController} />
       </Stack.Navigator>
     </NavigationContainer>
