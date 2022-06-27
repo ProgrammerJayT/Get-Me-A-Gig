@@ -3,6 +3,7 @@ import {View, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import SplashController from '../controllers/SplashController';
+import AuthController from '../controllers/AuthController';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +16,7 @@ function RouteStack() {
         }
       }>
         <Stack.Screen name="Splash" component={SplashController} />
+        <Stack.Screen name="Auth" component={AuthController} />
       </Stack.Navigator>
     </NavigationContainer>
   );
