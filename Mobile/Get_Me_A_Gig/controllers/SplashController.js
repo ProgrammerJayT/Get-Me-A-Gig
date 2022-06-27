@@ -4,8 +4,11 @@ import Splash from '../screens/Splash';
 
 export default function SplashController({navigation}) {
 
-  const imageURL = '../res/images/logo.png';
+  setTimeout(() => {
+    navigation.navigate('Auth');
+  }, 2000);
+
   return (
-    <Splash imageURL = {imageURL} />
+    <Splash />
   );
 }
